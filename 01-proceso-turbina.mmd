@@ -1,0 +1,31 @@
+---
+config:
+  theme: base
+  themeVariables:
+    background: "#FFFFFF"
+    primaryColor: "#EAF0F6"
+    primaryTextColor: "#0E1620"
+    primaryBorderColor: "#4A7A9B"
+    secondaryColor: "#FFFFFF"
+    secondaryTextColor: "#0E1620"
+    secondaryBorderColor: "#5AA9D6"
+    tertiaryColor: "#F4F7FA"
+    tertiaryTextColor: "#0E1620"
+    tertiaryBorderColor: "#D8A24A"
+    lineColor: "#31465C"
+    textColor: "#0E1620"
+    edgeLabelBackground: "#FFFFFF"
+    fontFamily: "Aptos, Calibri, Arial, sans-serif"
+    fontSize: "18px"
+---
+flowchart TD
+  accTitle: Proceso simplificado de una turbina de gas
+  accDescr: El aire se filtra y comprime, se combina con combustible en la combustión, y los gases mueven una turbina. La turbina impulsa generación de energía y libera gases de escape donde se mide NOX.
+  A[Recibir aire ambiente] --> B[Filtrar y comprimir aire]
+  B --> C[Quemar la mezcla]
+  F[Incorporar combustible] --> C
+  C --> D[Expandir gases en la turbina]
+  D --> E[Impulsar generación de energía]
+  D --> G[Medir NOX en el escape]
+  classDef foco fill:#E89340,stroke:#D8A24A,color:#0E1620,stroke-width:3px;
+  class G foco;
